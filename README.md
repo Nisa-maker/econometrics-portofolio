@@ -6,7 +6,6 @@ This repository showcases projects that use quantitative methods to analyze real
 
 Rather than emphasizing theory-heavy econometrics, this portfolio highlights practical analysis, data handling, and empirical reasoning.
 
----
 
 ## Featured Project
 
@@ -32,7 +31,6 @@ An applied analysis examining targeting accuracy in social assistance programs u
 
 This project demonstrates how quantitative analysis can be used to evaluate policy implementation quality and identify potential sources of mistargeting.
 
----
 
 ## Project Categories
 
@@ -45,7 +43,7 @@ Topics include:
 - Policy-relevant insights
 - Diagnostic awareness (not theory-heavy)
 
----
+
 
 ### 2. Policy & Social Data Analysis
 Projects centered on public policy evaluation and social program analysis.
@@ -55,7 +53,7 @@ Examples:
 - Household welfare analysis
 - Program eligibility vs. outcomes
 
----
+
 
 ### 3. Quantitative Methods (Planned)
 Future projects may include:
@@ -65,7 +63,7 @@ Future projects may include:
 
 These will be added as the portfolio expands.
 
----
+
 
 ## Tools & Libraries
 - Python  
@@ -76,7 +74,7 @@ These will be added as the portfolio expands.
 - Matplotlib / Seaborn  
 - Jupyter Notebook  
 
----
+
 
 ## Purpose
 This portfolio demonstrates my ability to:
@@ -85,7 +83,20 @@ This portfolio demonstrates my ability to:
 - Interpret results clearly and critically
 - Communicate data-driven insights for policy and research contexts
 
----
+## Data
 
-✨ More projects coming soon.
+The analysis uses a simulated household-level dataset designed to reflect common characteristics used in social assistance targeting.
+
+- **Unit of analysis:** Household
+- **Number of observations:** 300 households
+- **Key variables:**
+  - `monthly_income`: Household monthly income
+  - `num_dependents`: Number of household dependents
+  - `house_condition`: Housing condition (poor / average / good)
+  - `eligible_actual`: Eligibility status based on predefined criteria
+  - `received_assistance`: Actual assistance receipt
+  - `targeting_status`: Classification of targeting accuracy (accurate, inclusion error, exclusion error)
+
+The dataset is simulated for demonstration purposes and does not represent real household records.
+
 
