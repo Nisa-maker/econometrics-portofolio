@@ -1,64 +1,91 @@
+# Applied Data & Policy Analysis Portfolio
 
-# Econometrics Portfolio
+Welcome to my applied data analysis portfolio.
 
-Welcome to my econometrics portfolio!  
-This repository showcases applied econometrics projects, including regression analysis, time series forecasting, panel data models, and causal inference. Each project includes code, visualization, model diagnostics, and interpretation based on real economic questions.
+This repository showcases projects that use quantitative methods to analyze real-world economic and public policy problems. The focus is on translating data into insights through applied statistical modeling, clear interpretation, and policy-relevant discussion.
 
+Rather than emphasizing theory-heavy econometrics, this portfolio highlights practical analysis, data handling, and empirical reasoning.
 
-##  Project Categories
+---
 
-###  1. Regression Analysis
+## Featured Project
+
+### Social Assistance Targeting Analysis
+An applied analysis examining targeting accuracy in social assistance programs using household-level data.
+
+**Focus:**
+- Eligibility vs. actual assistance receipt
+- Inclusion and exclusion errors
+- Household-level characteristics associated with targeting outcomes
+
+**Methods used:**
+- Logistic regression (Logit)
+- Descriptive statistics
+- Error classification analysis
+
+**Key variables:**
+- Monthly income
+- Number of dependents
+- Housing condition
+- Eligibility status
+- Assistance receipt
+
+This project demonstrates how quantitative analysis can be used to evaluate policy implementation quality and identify potential sources of mistargeting.
+
+---
+
+## Project Categories
+
+### 1. Applied Regression Analysis
+Projects focusing on applied regression techniques to explore relationships in economic and social data.
+
 Topics include:
-- Multiple linear regression  
-- Model diagnostics (heteroskedasticity, VIF, autocorrelation)  
-- Interpretation of economic relationships  
+- Linear and logistic regression
+- Model interpretation
+- Policy-relevant insights
+- Diagnostic awareness (not theory-heavy)
 
+---
 
+### 2. Policy & Social Data Analysis
+Projects centered on public policy evaluation and social program analysis.
 
-###  2. Time Series Analysis
-Methods:
-- ARIMA / SARIMA  
-- Trend & seasonal decomposition  
-- Forecasting  
+Examples:
+- Social assistance targeting
+- Household welfare analysis
+- Program eligibility vs. outcomes
 
+---
 
+### 3. Quantitative Methods (Planned)
+Future projects may include:
+- Time series analysis (forecasting and trends)
+- Panel data applications
+- Causal inference techniques (DiD, IV, RDD)
 
-###  3. Panel Data Models
-Using:
-- Fixed Effects  
-- Random Effects  
-- Hausman test  
+These will be added as the portfolio expands.
 
-Applications such as minimum wage impact, regional development, and FDI analysis.
+---
 
-
-
-###  4. Causal Inference
-Techniques:
-- Difference-in-Differences (DiD)  
-- Instrumental Variables (IV / 2SLS)  
-- Regression Discontinuity (RDD)  
-
-
-
-##  Tools & Libraries
+## Tools & Libraries
 - Python  
-- Pandas  
+- pandas  
 - NumPy  
-- Statsmodels  
-- Scikit-learn  
+- statsmodels  
+- scikit-learn  
 - Matplotlib / Seaborn  
 - Jupyter Notebook  
 
+---
 
+## Purpose
+This portfolio demonstrates my ability to:
+- Work with real-world data
+- Apply quantitative methods appropriately
+- Interpret results clearly and critically
+- Communicate data-driven insights for policy and research contexts
 
-##  Purpose
-This portfolio demonstrates my skills in:
-- Statistical and econometric modeling  
-- Data analysis and visualization  
-- Empirical research  
-- Translating results into economic insights  
+---
 
+✨ More projects coming soon.
 
-
-✨ More projects coming soon. Stay tuned!
