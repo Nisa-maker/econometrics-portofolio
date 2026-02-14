@@ -1,4 +1,4 @@
-# Optimizing Social Assistance Targeting: An Econometric Simulation
+# Optimizing Social Assistance Targeting : An Econometric Simulation
 
 ## Overview
 
@@ -40,9 +40,7 @@ The probability function is defined as:
 
 P(Y = 1) = 1 / (1 + exp(-(b0 + b1*Income + b2*Dependents + b3*Housing)))
 
-
-
-### Dataset
+### Dataset Propperties
 
 - Structured simulation dataset  
 - **Sample Size:** N = 5,000 households  
@@ -109,7 +107,6 @@ This project illustrates the integration of econometric modeling and policy inte
 
 ## Repository Structure
 
-## Repository Structure
 
 ```
 econometrics-portofolio/
