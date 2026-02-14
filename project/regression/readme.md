@@ -33,12 +33,13 @@ This aligns with broader public economics objectives of improving redistributive
 
 A Logistic Regression (Logit) model is employed due to the binary nature of eligibility:
 
-![Yi](https://latex.codecogs.com/svg.image?Y_i%20%5Cin%20%7B0,1%7D)
-
+Y = 1  if household is eligible  
+Y = 0  otherwise
 
 The probability function is defined as:
 
-![Logistic Model](https://latex.codecogs.com/svg.image?P(Y_i=1)=\frac{1}{1+e^{-(\beta_0+\beta_1%20Income_i+\beta_2%20Dependents_i+\beta_3%20Housing_i)}})
+P(Y = 1) = 1 / (1 + exp(-(b0 + b1*Income + b2*Dependents + b3*Housing)))
+
 
 
 ### Dataset
@@ -108,25 +109,16 @@ This project illustrates the integration of econometric modeling and policy inte
 
 ## Repository Structure
 
+## Repository Structure
+
 econometrics-portofolio/
 │
 ├── project/
-│ └── regression/
-│ ├── regression.ipynb
-│ │ ├── Data generation (N = 5,000 households)
-│ │ ├── Descriptive statistics
-│ │ ├── Logistic regression estimation
-│ │ ├── Model evaluation (Pseudo R², LLR test)
-│ │ └── Confusion matrix analysis
-│ │
-│ ├── dummy_social_assistance_targeting.csv
-│ │ └── Simulated household-level dataset
-│ │
-│ └── readme.md
-│ └── Project-specific documentation
+│   └── regression/
+│       ├── regression.ipynb
+│       ├── dummy_social_assistance_targeting.csv
+│       └── readme.md
 │
 ├── README.md
-│ └── Main project documentation
-│
-└── .gitignore
-└── Excludes virtual environment and cache files
+├── .gitignore
+└── LICENSE
