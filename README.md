@@ -1,102 +1,123 @@
-# Applied Data & Policy Analysis Portfolio
+# Optimizing Social Assistance Targeting : An Econometric Simulation
 
-Welcome to my applied data analysis portfolio.
+## Overview
 
-This repository showcases projects that use quantitative methods to analyze real-world economic and public policy problems. The focus is on translating data into insights through applied statistical modeling, clear interpretation, and policy-relevant discussion.
+This project presents an econometric evaluation of social assistance (Bansos) targeting efficiency using a structured household-level simulation dataset. 
 
-Rather than emphasizing theory-heavy econometrics, this portfolio highlights practical analysis, data handling, and empirical reasoning.
+By applying Logistic Regression (Logit Model) to 5,000 simulated households, this study estimates how socio-economic indicators influence eligibility and assesses the prevalence of targeting errors.
+
+The objective is to demonstrate applied econometric modeling for public policy optimization and fiscal efficiency analysis.
+
+---
+
+## Research Objective
+
+This study aims to model the probability of a household being eligible for social assistance based on:
+
+- **Monthly Income** – Proxy for economic status  
+- **Number of Dependents** – Proxy for household burden  
+- **Housing Condition** – Qualitative proxy for wealth  
+
+The model seeks to minimize:
+
+- **Inclusion Error** – Assistance granted to non-eligible households  
+- **Exclusion Error** – Eligible households left without assistance  
+
+This aligns with broader public economics objectives of improving redistributive efficiency and fiscal targeting performance.
+
+---
+
+## Methodology
+
+### Model Specification
+
+A Logistic Regression (Logit) model is employed due to the binary nature of eligibility:
+
+Y = 1  if household is eligible  
+Y = 0  otherwise
+
+The probability function is defined as:
+
+P(Y = 1) = 1 / (1 + exp(-(b0 + b1*Income + b2*Dependents + b3*Housing)))
+
+### Dataset Propperties
+
+- Structured simulation dataset  
+- **Sample Size:** N = 5,000 households  
+- Cross-sectional micro-level analysis  
+- Generated using `numpy.random` to preserve realistic socio-economic distributions  
+
+---
+
+## Model Performance
+
+### Statistical Robustness
+
+- **Pseudo R-squared:** 0.3451  
+- **LLR p-value:** 4.214 × 10⁻²⁰¹  
+- Indicates strong explanatory power for a social cross-sectional model  
+
+### Regression Results
+
+| Variable         | Coefficient   | P-value | Significance |
+|------------------|--------------|---------|-------------|
+| Intercept        | 0.5854       | 0.004   | **          |
+| Monthly Income   | -3.929e-06   | 0.000   | ***         |
+| Dependents       | 0.5382       | 0.000   | ***         |
+
+**Interpretation:**
+- Income has a statistically significant negative relationship with eligibility.
+- The number of dependents significantly increases the probability of receiving assistance.
+
+---
+
+## Targeting Accuracy
+
+| Status              | Count | Percentage |
+|---------------------|-------|------------|
+| Correctly Targeted  | 4,211 | 84.22%     |
+| Inclusion Error     | 663   | 13.26%     |
+| Exclusion Error     | 126   | 2.52%      |
+
+Overall model accuracy: **84.2%**
+
+---
+
+## Policy Implications
+
+While the model demonstrates high targeting accuracy, the 126 exclusion errors represent vulnerable households not reached by the system.
+
+From a public policy perspective, reducing exclusion errors should be prioritized, as they directly affect social welfare outcomes.
+
+This project illustrates the integration of econometric modeling and policy interpretation — translating statistical outputs into actionable governance insights.
+
+---
+
+## Tech Stack
+
+- **Python 3.12**
+- `pandas`
+- `numpy`
+- `statsmodels`
+- `scikit-learn`
+- `matplotlib`
+- `seaborn`
+
+---
+
+## Repository Structure
 
 
-## Featured Project
-
-### Social Assistance Targeting Analysis
-An applied analysis examining targeting accuracy in social assistance programs using household-level data.
-
-**Focus:**
-- Eligibility vs. actual assistance receipt
-- Inclusion and exclusion errors
-- Household-level characteristics associated with targeting outcomes
-
-**Methods used:**
-- Logistic regression (Logit)
-- Descriptive statistics
-- Error classification analysis
-
-**Key variables:**
-- Monthly income
-- Number of dependents
-- Housing condition
-- Eligibility status
-- Assistance receipt
-
-This project demonstrates how quantitative analysis can be used to evaluate policy implementation quality and identify potential sources of mistargeting.
-
-
-## Project Categories
-
-### 1. Applied Regression Analysis
-Projects focusing on applied regression techniques to explore relationships in economic and social data.
-
-Topics include:
-- Linear and logistic regression
-- Model interpretation
-- Policy-relevant insights
-- Diagnostic awareness (not theory-heavy)
-
-
-
-### 2. Policy & Social Data Analysis
-Projects centered on public policy evaluation and social program analysis.
-
-Examples:
-- Social assistance targeting
-- Household welfare analysis
-- Program eligibility vs. outcomes
-
-
-
-### 3. Quantitative Methods (Planned)
-Future projects may include:
-- Time series analysis (forecasting and trends)
-- Panel data applications
-- Causal inference techniques (DiD, IV, RDD)
-
-These will be added as the portfolio expands.
-
-
-
-## Tools & Libraries
-- Python  
-- pandas  
-- NumPy  
-- statsmodels  
-- scikit-learn  
-- Matplotlib / Seaborn  
-- Jupyter Notebook  
-
-
-
-## Purpose
-This portfolio demonstrates my ability to:
-- Work with real-world data
-- Apply quantitative methods appropriately
-- Interpret results clearly and critically
-- Communicate data-driven insights for policy and research contexts
-
-## Data
-
-The analysis uses a simulated household-level dataset designed to reflect common characteristics used in social assistance targeting.
-
-- **Unit of analysis:** Household
-- **Number of observations:** 300 households
-- **Key variables:**
-  - `monthly_income`: Household monthly income
-  - `num_dependents`: Number of household dependents
-  - `house_condition`: Housing condition (poor / average / good)
-  - `eligible_actual`: Eligibility status based on predefined criteria
-  - `received_assistance`: Actual assistance receipt
-  - `targeting_status`: Classification of targeting accuracy (accurate, inclusion error, exclusion error)
-
-The dataset is simulated for demonstration purposes and does not represent real household records.
-
-
+```
+econometrics-portofolio/
+│
+├── project/
+│   └── regression/
+│       ├── regression.ipynb
+│       ├── dummy_social_assistance_targeting.csv
+│       └── readme.md
+│
+├── README.md
+├── .gitignore
+└── LICENSE
+```
