@@ -108,16 +108,18 @@ This project illustrates the integration of econometric modeling and policy inte
 ## Repository Structure
 
 
-```
-econometrics-portofolio/
+ECONOMETRICS-PORTFOLIO
 │
-├── project/
-│   └── regression/
-│       ├── regression.ipynb
-│       ├── dummy_social_assistance_targeting.csv
-│       └── readme.md
+├── project
+│   ├── regression
+│   │   ├── regression.ipynb
+│   │   ├── dummy_social_assistance_targeting.csv
+│   │   ├── logit_model_bansos.pkl
+│   ├── app.py
+│   ├── Dockerfile
 │
-├── README.md
+├── venv
 ├── .gitignore
-└── LICENSE
-```
+├── LICENSE
+├── README.md
+└── requirements.txt
