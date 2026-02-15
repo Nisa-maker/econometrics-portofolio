@@ -126,7 +126,7 @@ ECONOMETRICS-PORTFOLIO
 └── requirements.txt
  ```
 
- ## 🚀 Run with Docker
+ ## Run with Docker
 
 Build image:
 
