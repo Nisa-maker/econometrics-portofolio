@@ -116,11 +116,29 @@ ECONOMETRICS-PORTFOLIO
 │   │   ├── dummy_social_assistance_targeting.csv
 │   │   ├── logit_model_bansos.pkl
 │   ├── app.py
-│   ├── Dockerfile
 │
 ├── venv
+├── .dockerignore
 ├── .gitignore
+├── Dockerfile
 ├── LICENSE
 ├── README.md
 └── requirements.txt
  ```
+
+ ## 🚀 Run with Docker
+
+Build image:
+
+```bash
+docker build -t econometrics-portfolio .
+```
+
+Run container:
+
+```bash
+docker run -p 8501:8501 econometrics-portfolio
+```
+
+Open in browser:
+http://localhost:8501
