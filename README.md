@@ -107,7 +107,7 @@ This project illustrates the integration of econometric modeling and policy inte
 
 ## Repository Structure
 
-
+---
 ECONOMETRICS-PORTFOLIO
 │
 ├── project
@@ -123,4 +123,4 @@ ECONOMETRICS-PORTFOLIO
 ├── LICENSE
 ├── README.md
 └── requirements.txt
- ...
+ ---
